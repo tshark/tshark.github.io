@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next mist" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="前端," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="当今随着互联网技术的蓬勃发展，Web应用可以说无处不在，从最初的聊天室、论坛、门户网站，到如今的博客、电商平台到处都可见Web应用的身影，在程序开发领域伴随而产生的一个现象就是，Web前端开发岗位的持续升温，目前在几乎所有互联网公司中，Web前端开发工程师的招聘均是常年占据着公司招聘排行榜的“榜首”，可以说开发界的“前端”基本上等同于直播界的“网红”！ 那么如何学习前端技术，以及前端开发技术是如何">
+<meta name="keywords" content="前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端开发那点儿事">
+<meta property="og:url" content="http://tshark.net/2018/08/19/前端开发那点事/index.html">
+<meta property="og:site_name" content="TShark">
+<meta property="og:description" content="当今随着互联网技术的蓬勃发展，Web应用可以说无处不在，从最初的聊天室、论坛、门户网站，到如今的博客、电商平台到处都可见Web应用的身影，在程序开发领域伴随而产生的一个现象就是，Web前端开发岗位的持续升温，目前在几乎所有互联网公司中，Web前端开发工程师的招聘均是常年占据着公司招聘排行榜的“榜首”，可以说开发界的“前端”基本上等同于直播界的“网红”！ 那么如何学习前端技术，以及前端开发技术是如何">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/web-front-history.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/Tim-Berners-Lee.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/Brendan-Eich.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/Bert-Bos.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/html-css-js.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/netscape.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/ie1.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/firefox.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/chrome.png">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/study-web-1.jpg">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/study-web-2.jpg">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/study-web-3.jpg">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/study-web-4.jpg">
+<meta property="og:image" content="http://tshark.net/2018/08/19/前端开发那点事/study-web-5.jpg">
+<meta property="og:updated_time" content="2018-08-25T13:46:26.910Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端开发那点儿事">
+<meta name="twitter:description" content="当今随着互联网技术的蓬勃发展，Web应用可以说无处不在，从最初的聊天室、论坛、门户网站，到如今的博客、电商平台到处都可见Web应用的身影，在程序开发领域伴随而产生的一个现象就是，Web前端开发岗位的持续升温，目前在几乎所有互联网公司中，Web前端开发工程师的招聘均是常年占据着公司招聘排行榜的“榜首”，可以说开发界的“前端”基本上等同于直播界的“网红”！ 那么如何学习前端技术，以及前端开发技术是如何">
+<meta name="twitter:image" content="http://tshark.net/2018/08/19/前端开发那点事/web-front-history.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://tshark.net/2018/08/19/前端开发那点事/"/>
+
+
+
+
+
+  <title>前端开发那点儿事 | TShark</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TShark</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://tshark.net/2018/08/19/前端开发那点事/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="老T">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TShark">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">前端开发那点儿事</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-19T17:05:36+08:00">
+                2018-08-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/08/19/前端开发那点事/" class="leancloud_visitors" data-flag-title="前端开发那点儿事">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>当今随着互联网技术的蓬勃发展，Web应用可以说无处不在，从最初的聊天室、论坛、门户网站，到如今的博客、电商平台到处都可见Web应用的身影，在程序开发领域伴随而产生的一个现象就是，Web前端开发岗位的持续升温，目前在几乎所有互联网公司中，Web前端开发工程师的招聘均是常年占据着公司招聘排行榜的“榜首”，可以说开发界的“前端”基本上等同于直播界的“网红”！</p>
+<p>那么如何学习前端技术，以及前端开发技术是如何一步步进行演化的，接下来跟大家聊一聊，我所了解的前端开发的一些知识内容，这里我会分两个部分进行展开：</p>
+<ol>
+<li>前端发展简史：借助神奇的互联网，收集和整理了一些前端技术发展的关键性结点</li>
+<li>前端学习路线：分析和整理出一套当前流行的“大前端”技术学习路线</li>
+</ol>
+<a id="more"></a>
+<h2 id="前端发展简史"><a href="#前端发展简史" class="headerlink" title="前端发展简史"></a>前端发展简史</h2><p><img src="/2018/08/19/前端开发那点事/web-front-history.png" alt=""></p>
+<p>前端发展可以从两个方面进行回顾和总结：</p>
+<ol>
+<li>前端标准及开发语言的发展</li>
+<li>前端支撑工具（浏览器）的演变</li>
+</ol>
+<hr>
+
+<h3 id="前端标准及开发语言"><a href="#前端标准及开发语言" class="headerlink" title="前端标准及开发语言"></a>前端标准及开发语言</h3><p><img src="/2018/08/19/前端开发那点事/Tim-Berners-Lee.png" alt=""></p>
+<blockquote>
+<p>一提到前端技术，我们可能首先想到的就是 HTML 语言，这里首先登场的是一位绝对的跨界牛人“蒂姆·伯纳斯·李”（物理学家=&gt;互联网的发明者），1989年，蒂姆·伯纳斯·李为了方便学术文档的分享创造了 HTML，也由此开启了前端发展的历史进程。</p>
+</blockquote>
+<p><img src="/2018/08/19/前端开发那点事/Brendan-Eich.png" alt=""></p>
+<blockquote>
+<p>1995年，前端中一统天下的脚本语言：JavaScript诞生（原名LiveScript，据说当年为了蹭Java的热度才改名为JavaScript的，但JavaScript与Java真的半毛关系都没有！），创造者是网景（Netscape）的布兰登·艾奇，据说他仅仅用了10天的时间就完成了这项创举，真是普通人都经历着相同而又平凡的人生，而每个牛人都有着不同而又牛X的故事。</p>
+</blockquote>
+<hr>
+
+<p><img src="/2018/08/19/前端开发那点事/Bert-Bos.png" alt=""></p>
+<blockquote>
+<p>1996年，伯特·波斯与维姆莱共同创建和发布了CSS1.0版本，Web页面具有了独立的样式标准，也由此前端技术三剑客（HTML、CSS、JavaScript）正式到齐了！</p>
+</blockquote>
+<p><img src="/2018/08/19/前端开发那点事/html-css-js.png" alt=""></p>
+<hr>
+
+<h3 id="前端工具（浏览器）"><a href="#前端工具（浏览器）" class="headerlink" title="前端工具（浏览器）"></a>前端工具（浏览器）</h3><p><img src="/2018/08/19/前端开发那点事/netscape.png" alt=""></p>
+<blockquote>
+<p>1994年， 网景（Netscape）公司发布了一款Web浏览器：Netscape Navigator 0.9 版(但这不是世界上第一款图形浏览器,据说第一款浏览器是1992年由赫尔辛基科技大学的 4 个芬兰学生发明的,名称: Erwise)，经过不断的优化的改进，当时 Netscape 浏览器市场份额一举超过90%，由此奠定了 Netscape 在当时互联网界的霸主地位（遥想1999年在公司，下班后，一个人偷偷的插上电话线，拨通56K的Modem，伴随着十几秒知啦知啦…拨号声后，打开 Netscape 浏览器，面对着一堆陌生而又神奇的网页，真的有一种很难用语言形容的兴奋的感觉！）</p>
+</blockquote>
+<hr>
+
+<p><img src="/2018/08/19/前端开发那点事/ie1.png" alt=""></p>
+<blockquote>
+<p>作为操作系统界的老大，微软公司是绝对不会放弃浏览器市场这块巨大的蛋糕的，Netscape 浏览器发布后的一年 1995 ，微软首次发布了 Internet Explorer （ IE1.0 版本）浏览器，由于 Netscape 的市场占有率已经超过 90%，所以 IE1 的发布并没有对 Netscape 造成具有威胁性的挑战，直到 1997年，IE4.0版本的发布才算是真正给了 Netscape 一次正面的回击（依靠的是捆绑在Windows操作系统中的垄断手法，此举使得网景的份额大幅流失给微软，并最终走向倒闭，此外，在Windows中集成IE浏览器的做法，也为2001年美国政府以《反垄断法》重罚微软埋下了伏笔），后期为了争夺互联的入口权，微软也是不惜代价的在不断升级和优化IE浏览器，从“臭名昭著”的IE6，一直发展到今天的 IE11 以及 Edge（虽然微软的浏览器一直在不停的优化和升级，但不可否认的是其对W3C相关标准的兼容性始终是最差的！！！特别是 IE6，几乎是所有前端开发人员的恶梦！甚至有的前端开发人员对老板发出过撕心裂肺的怒吼：如果让我的代码兼容IE6，我就辞职 :》）</p>
+</blockquote>
+<hr>
+
+<p><img src="/2018/08/19/前端开发那点事/firefox.png" alt=""></p>
+<blockquote>
+<p>浏览器界曾经的 Super Star， 获奖无数的 Mozilla Firefox，中文俗称“火狐”，根据2013年8月浏览器统计数据，Firefox在全球网页浏览器市占率76%至81%，用户数在各网页浏览器中排名第三…多么牛X啊！！！当年本人绝对是 Firefox 的支持者和拥护者，特别是做Web开发使用 Firebug 插件调试Web页面，绝对是比IE爽的不知道多少倍！但后期由于其创新乏力，更新迟缓，被后起之秀 Chrome 盖过了风头，近些年感觉 Firefox 没落了很多！</p>
+</blockquote>
+<hr>
+
+<p><img src="/2018/08/19/前端开发那点事/chrome.png" alt=""></p>
+<blockquote>
+<p>互联网发展到今天，再提到浏览器，我们很难错过 Google 的 Chrome ，特别是在Web应用程序开发领域，可以说 Chrome 是每一个 Web 开发人员的标配浏览器，其简洁的界面风格以及强大的调试工具深爱广大 Web 开发人员的喜爱，2008年，北京奥运会开展之际，Google 正式发布首个 Chrome Beta 版，也由此正式开启了 Chrome 在浏览器领域霸主地位的争战！</p>
+</blockquote>
+<p>至于国产浏览器，这里就是不浪费文字了。。。除了包装就是套壳，基本没什么核心技术！当然最近“某芯”浏览器不经意间用2.5个亿自告奋勇的扛起了“纯正国产浏览器”的大旗，但牛B吹的有点大，结果炸了，这真是：树不要皮，必死无疑；人不要脸，天下无敌啊！！！</p>
+<h2 id="前端学习路线"><a href="#前端学习路线" class="headerlink" title="前端学习路线"></a>前端学习路线</h2><p>学习编程的路，对于任何人来说，都不可能是一帆风顺的，但如果你是一个热爱编程或者喜欢coding的人，那么这条路将是一条伴随着苦与乐的阳光大道，反之，如果只把编程当成一种挣钱的手段，那么，这条路很可能会变成了一条荆棘密布的炼狱之路！</p>
+<p>下面是我们所总结出来的关于Web前端开发学习的进阶路线，希望对准备或正在行走于前端开发之路上的小伙伴们能有所启发和帮助，这里我把前端学习划分成了几个主要的阶段：</p>
+<hr>
+
+<h3 id="初出茅庐"><a href="#初出茅庐" class="headerlink" title="初出茅庐"></a>初出茅庐</h3><p><img src="/2018/08/19/前端开发那点事/study-web-1.jpg" alt=""></p>
+<blockquote class="blockquote-center"><p>万丈高楼平地起，成功只能靠自己。作为在前端路上初出茅庐的你，首要任务是打好Web基础知识，可以说在Web开发领域要想“人前显赫”，必须学好“Web三剑客”（HTML/CSS/JavaScript）！</p>
+</blockquote>
+<div class="note default"><p>核心知识：HTML/CSS/JavaScript</p></div>
+<div class="note info"><p>具体内容：HTML/CSS基础知识、DIV/CSS页面布局、HTML表单应用、HTML/CSS开发规范、JS基础、JS函数、JS DOM操作、JS对象、JS OOP、JS事件、JS图形、JS定时、JS正则表达式、JS排序算法、JS闭包、JS特效、JS开发调试、JS开发规范</p></div>
+<div class="note success"><p>使用工具：Sublime Text、VS Code、Chrome、IETester、Emmet、JSHint（前端开发工具很多，自己挑顺手的就可以，这里推荐使用 VS Code -&gt; 免费、简单、实用！）</p></div>
+<p><br></p>
+<h3 id="修炼内功"><a href="#修炼内功" class="headerlink" title="修炼内功"></a>修炼内功</h3><p><img src="/2018/08/19/前端开发那点事/study-web-2.jpg" alt=""></p>
+<blockquote class="blockquote-center"><p>每个人都有梦想。但不同的是：有的人只梦，有的人敢想。掌握了前端基础知识的你已经为你的前端梦想插上了起飞的翅膀，此时可以考虑学习一点HTML5/CSS3（两个伴随着移动互联网的发展而诞生的前端新生宠儿）的相关知识</p>
+</blockquote>
+<div class="note default"><p>核心知识：HTML5/CSS3</p></div>
+<div class="note info"><p>具体内容：HTML5/CSS3基础、HTML5语义标签、HTML5表单元素、HTML5 Canvas、HTML5音视频、HTML WebSocket、HTML5本地存储、HTML5 WebSQL、CSS3新增选择器(伪类)、CSS3过渡、CSS3动画、CSS3 2D/3D效果、CSS3 Flex页面布局、CSS3响应式布局、px/em/rem详解、浏览器兼容适配、移动应用</p></div>
+<div class="note primary"><p>扩展内容：BEM，OOCSS，SMACSS，SUITCSS，Atmoic</p></div>
+<div class="note success"><p>使用工具：CSSLint、Normalize.css</p></div>
+<p><br></p>
+<h3 id="提升技能"><a href="#提升技能" class="headerlink" title="提升技能"></a>提升技能</h3><p><img src="/2018/08/19/前端开发那点事/study-web-3.jpg" alt=""></p>
+<blockquote class="blockquote-center"><p>生活就像心电图，如果总是一帆风顺说明可能你已经挂了。趁着呼吸还在，血量还演满，让我们对前端技能做一次质的提升吧，学习一些前端的流行框架，如：jQuery/Bootstrap等，不仅要学习这些框架是怎么使用的，要还学习一下这些框架中蕴含的前端编程思想，说不定哪天我们也会创造出这样牛X的前端框架，顶礼膜拜，普度众生！</p>
+</blockquote>
+<div class="note default"><p>核心知识：jQuery/Bootstrap</p></div>
+<div class="note info"><p>具体内容：jQuery基础、jQuery选择器、jQuery过滤器、jQuery DOM操作、jQuery事件、JSON/XML数据格式、Ajax简介及异步概念、Ajax缓存处理、jQuery Ajax操作、JSONP跨域操作、jQuery插件定义及使用、jQuery特效、jQuery动画、jQuery开发规范、图片延迟加载(Lazy Load)、Bootstrap基础、Bootstrap响应式布局、Bootstrap表单、Bootstrap插件、Bootstrap导航菜单、Bootstrap图标</p></div>
+<div class="note primary"><p>扩展内容：面向对象(JS面向对象、基本类型、复杂类型、原型链)、AMD/CMD设计规范、Require.js应用、Sea.js应用、JS设计模式</p></div>
+<div class="note success"><p>使用工具：前端工程化、npm、Yeoman、Bower、Grunt、TortoiseGit、GitHub</p></div>
+<p><br></p>
+<h3 id="打怪除魔"><a href="#打怪除魔" class="headerlink" title="打怪除魔"></a>打怪除魔</h3><p><img src="/2018/08/19/前端开发那点事/study-web-4.jpg" alt=""></p>
+<blockquote class="blockquote-center"><p>前端虐我千百遍，我视前端如初恋。只有具备了这种“被虐”的心态，你才能在前端的学习之路上披荆斩棘，勇往直前！对于很多刚刚入门前端学习的小伙伴来说 Node.js 绝对可说是一个“怪兽”，因为 Node.js 本身是一个后端的轻量级服务器框架，作为前端还没出师的你又要来学习后端开的相关知识，很多人此时开始彷徨、困惑、后退，甚至开始怀疑前端人生。。。但此时要想成为一个徘徊在牛A和牛C之间的前端程序员，除了直面“怪兽”，坚持战斗，别无他选！因为 Node.js 不仅仅是一个服务器，它还是前端工程化中非常重要的一个强大工具，可以说，战胜了这个 Node.js “怪兽”，你向“大前端”的梦想之路又迈进了至关重要的一步！加油！</p>
+</blockquote>
+<div class="note default"><p>核心知识：Node.js/MongoDB</p></div>
+<div class="note info"><p>具体内容：Node.js基础、数据库基础概念、Express、Koa、WebSocket(Socket.io)、JS异步编程(Promise)、非阻塞I/O、Jade/Ejs模板引擎、Node.js操作MongoDB</p></div>
+<div class="note primary"><p>扩展内容：数据可视化(ECharts/D3.js)</p></div>
+<div class="note success"><p>使用工具：npm、Webpack、MongoDB、ESLint，JSLint，JSHint，JSCS</p></div>
+<p><br></p>
+<h3 id="成就王者"><a href="#成就王者" class="headerlink" title="成就王者"></a>成就王者</h3><p><img src="/2018/08/19/前端开发那点事/study-web-5.jpg" alt=""></p>
+<blockquote class="blockquote-center"><p>每个人至少拥有一个梦想，有一个理由去坚强。心若没有栖息的地方，到哪里都是在流浪！这个世界上其实成功并不难，因为真正懂得坚持的人太少，你在前端的路上，怀揣梦想，历经磨难，此时只要将 MVVM（Vue.js/React.js/Angular.js） 框架中的一个学通，学精，前端王者的桂冠非你莫属！</p>
+</blockquote>
+<div class="note default"><p>核心知识：Vue.js/React.js/Angular.js</p></div>
+<div class="note info"><p>具体内容：MVVM框架介绍、Vue.js基础、Vue-cli、Vuex、Vue-Router、Axios、自定义组件、Mint UI、ES6、Babel(ES6转换为ES5) 、CSS预处理(Sass/Stylus)、前后端分离、跨域操作、前端测试(Mocha/Jasmine)、React.js基础、虚拟DOM、JSX语法、React.js组件、Redux、React-Redux、React-Router…</p></div>
+<div class="note primary"><p>扩展内容：服务器端渲染Nuxt.js，RxJs入门、WebApp/NativeApp/HybirdApp、Cordova、React Native</p></div>
+<div class="note success"><p>使用工具：Mock.js、Lodash.js/Underscore.js、Webpack</p></div>
+<div class="note danger"><p>Web性能&amp;安全：Web性能优化、XSS(跨站脚本攻击)、CSRF(跨站点伪造请求攻击)、跨iframe攻击、Clickjacking安全漏洞</p></div>
+<div class="note warning"><p>前端测试框架：Jest，Mocha，Protractor，Karma，Enzyme</p></div>
+<blockquote class="blockquote-center"><p>在当今这个互联网构成的世界中，学习是一种力量的坚持，也是一份人生的机缘…世间有百媚千红，唯独你是我情之所钟，“实训在线” - 在线等你！</p>
+</blockquote>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">老T</p>
+              <p class="site-description motion-element" itemprop="description">科技改变生活！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前端发展简史"><span class="nav-number">1.</span> <span class="nav-text">前端发展简史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端标准及开发语言"><span class="nav-number">1.1.</span> <span class="nav-text">前端标准及开发语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前端工具（浏览器）"><span class="nav-number">1.2.</span> <span class="nav-text">前端工具（浏览器）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端学习路线"><span class="nav-number">2.</span> <span class="nav-text">前端学习路线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初出茅庐"><span class="nav-number">2.1.</span> <span class="nav-text">初出茅庐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修炼内功"><span class="nav-number">2.2.</span> <span class="nav-text">修炼内功</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提升技能"><span class="nav-number">2.3.</span> <span class="nav-text">提升技能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打怪除魔"><span class="nav-number">2.4.</span> <span class="nav-text">打怪除魔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成就王者"><span class="nav-number">2.5.</span> <span class="nav-text">成就王者</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">老T</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("4fpCMkbTFzWMiVrIOrSiJ3Kv-gzGzoHsz", "fTccBA9QXrg3T05o0Mrrl3mc");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
