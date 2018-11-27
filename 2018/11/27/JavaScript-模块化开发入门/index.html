@@ -86,7 +86,7 @@
 <meta property="og:description" content="JS 为什么要模块化JavaScript 语言最初设计的主要作用仅仅是用来验证表单输入的有效性，为Web页面添加一些动画效果等，并不包含太多的高级语言的特性，此时通常直接在HTML页面中编写简单的 JS 代码或从外部引入一个 JS 文件即可。 随着前端开发技术的发展和演化，JS 在应用程序中的地位显著提升（甚至已经扩展到了服务端应用，如：Node.js），伴随而来的是前端 JS 代码的复杂度也在相">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://tshark.net/2018/11/27/JavaScript-模块化开发入门/module.png">
-<meta property="og:updated_time" content="2018-11-27T13:53:05.451Z">
+<meta property="og:updated_time" content="2018-11-27T13:55:51.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 模块化开发入门">
 <meta name="twitter:description" content="JS 为什么要模块化JavaScript 语言最初设计的主要作用仅仅是用来验证表单输入的有效性，为Web页面添加一些动画效果等，并不包含太多的高级语言的特性，此时通常直接在HTML页面中编写简单的 JS 代码或从外部引入一个 JS 文件即可。 随着前端开发技术的发展和演化，JS 在应用程序中的地位显著提升（甚至已经扩展到了服务端应用，如：Node.js），伴随而来的是前端 JS 代码的复杂度也在相">
@@ -358,12 +358,11 @@
 <li>CommonJS（已经逐渐废弃，不推荐使用）</li>
 <li>ES6 Module（ECMAScript 6 的简称，JavaScript语言的下一代标准）– 推荐使用</li>
 </ul>
-<blockquote>
-<p>浏览器目前还不完全支持 ES6 模块，利用 Babel（<a href="https://babeljs.io/）" target="_blank" rel="noopener">https://babeljs.io/）</a> 库可以将其转换为 ES5 的写法。</p>
-</blockquote>
+<p><code>注：浏览器目前还不完全支持 ES6 模块，利用 Babel（https://babeljs.io/） 库可以将其转换为 ES5 的写法。</code></p>
 <div class="note success"><p>AMD规范采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。</p>
 <p>require.js （ <a href="https://requirejs.org/" target="_blank" rel="noopener">https://requirejs.org/</a> ）实现AMD规范的模块化JS库</p></div>
-<div class="note primary"><p>CMD是另一种国内发展出来的js模块化方案，它与AMD很类似，不同点在于：AMD 推崇依赖前置、提前执行，CMD推崇依赖就近、延迟执行。<br>sea.js （ <a href="https://github.com/seajs/seajs" target="_blank" rel="noopener">https://github.com/seajs/seajs</a> ）实现CMD规范的模块化JS库</p></div>
+<div class="note primary"><p>CMD是另一种国内发展出来的js模块化方案，它与AMD很类似，不同点在于：AMD 推崇依赖前置、提前执行，CMD推崇依赖就近、延迟执行。</p>
+<p>sea.js （ <a href="https://github.com/seajs/seajs" target="_blank" rel="noopener">https://github.com/seajs/seajs</a> ）实现CMD规范的模块化JS库</p></div>
 <div class="note info"><p>Node.js是commonJS规范的主要实践者，CommonJS 的模块提案为在服务器端声明模块指定了一个简单的 API。<br>CommonJS 已经过时，Node.js 的内核开发者已经逐渐废弃了该规范。</p></div>
 <div class="note default"><p>ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，旨在成为浏览器和服务器通用的模块解决方案。<br>ES6 模块功能主要由两个命令构成：export 和 import。</p>
 <ul>
